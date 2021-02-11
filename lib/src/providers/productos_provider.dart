@@ -10,7 +10,7 @@ import 'package:mime_type/mime_type.dart';
 import 'package:apptienda/src/models/producto_model.dart';
 
 class ProductosProvider {
-  final String _url = 'https://flutter-varios.firebaseio.com';
+  final String _url = 'https://ingsw-314ee-default-rtdb.firebaseio.com';
   final _prefs = new PreferenciasUsuario();
 
   Future<bool> crearProducto(ProductoModel producto) async {
@@ -71,7 +71,7 @@ class ProductosProvider {
 
   Future<String> subirImagen(File imagen) async {
     final url = Uri.parse(
-        'https://api.cloudinary.com/v1_1/dc0tufkzf/image/upload?upload_preset=cwye3brj');
+        'https://api.cloudinary.com/v1_1/luisramga/image/upload?upload_preset=jwgp45hh');
     final mimeType = mime(imagen.path).split('/'); //image/jpeg
 
     final imageUploadRequest = http.MultipartRequest('POST', url);
