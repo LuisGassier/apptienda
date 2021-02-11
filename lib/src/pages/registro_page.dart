@@ -180,7 +180,7 @@ class RegistroPage extends StatelessWidget {
             children: <Widget>[
               Icon(Icons.person_pin_circle, color: Colors.white, size: 100.0),
               SizedBox(height: 10.0, width: double.infinity),
-              Text('Tienda Herrera',
+              Text('Tienda',
                   style: TextStyle(color: Colors.white, fontSize: 25.0))
             ],
           ),
